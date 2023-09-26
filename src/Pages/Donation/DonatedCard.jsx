@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom"
 
 const DonatedCard = ({ card }) => {
 
@@ -9,11 +9,11 @@ const DonatedCard = ({ card }) => {
         color: text_color,
     }
 
-    const btnStyle={
+    const btnStyle = {
         backgroundColor: button_bg,
     }
 
-    const detailsBtnBg={
+    const detailsBtnBg = {
         backgroundColor: text_color,
     }
 
@@ -28,6 +28,8 @@ const DonatedCard = ({ card }) => {
                 <h2 className="mt-2 text-[#0B0B0B] text-2xl font-semibold mb-2">{title}</h2>
                 <p className="mb-5 text-base font-semibold">${price}</p>
                 <button className="text-[#FFF] font-semibold px-4 py-2 rounded" style={detailsBtnBg}>View Details</button>
+
+
             </div>
 
 
