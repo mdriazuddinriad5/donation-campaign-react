@@ -1,6 +1,15 @@
+import { useState } from "react";
 
 
-const Banner = () => {
+const Banner = ({handleSearch}) => {
+
+    const [inputValue, setInputValue] = useState('');
+
+    const handleCategory=()=>{
+        handleSearch(inputValue)
+        setInputValue('')
+    }
+
 
     return (
         <div>
@@ -17,8 +26,14 @@ const Banner = () => {
                 <div className="hero-content text-center text-neutral-content relative z-10">
                     <div>
                         <h1 className="mb-10 text-5xl font-bold">I Grow By Helping People In Need</h1>
-                        <input type="text" placeholder="Search here" className="input input-bordered border-[#DEDEDE] input-primary w-full max-w-xs focus:border-none" />
-                        <button className="py-3 px-6 rounded-lg bg-[#FF444A] border-none text-[#FFFFFFF2]">Search</button>
+                        <input 
+                        type="text" 
+                        placeholder="Search here" 
+                        className="input input-bordered border-[#DEDEDE] input-primary w-full max-w-xs focus:border-none"
+                        value={inputValue}
+                        onChange={(e)=> setInputValue(e.target.value)}
+                        />
+                        <button onClick={handleCategory} className="py-3 px-6 rounded-lg bg-[#FF444A] border-none text-[#FFFFFFF2]">Search</button>
                     </div>
                 </div>
             </div>
