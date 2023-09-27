@@ -2,8 +2,8 @@
 
 const ErrorPage = () => {
     return (
-        <div>
-            Me
+        <div className="flex justify-center items-center h-screen">
+            <p className="text-2xl">Error</p>
         </div>
     );
 };
