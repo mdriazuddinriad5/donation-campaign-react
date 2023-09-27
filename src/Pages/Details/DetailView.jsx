@@ -42,18 +42,18 @@ const DetailView = ({ card }) => {
 
 
     return (
-        <div className="max-w-7xl mx-auto">
+        <div className="w-5/6 mx-auto">
             <div className="relative">
                 <div>
-                    <img className="w-full h-[60vh]" src={picture_lg} alt="" />
+                    <img className="w-full lg:h-[60vh]" src={picture_lg} alt="" />
                 </div>
                 <div className="absolute h-24 bottom-0 left-0 right-0 bg-[#0B0B0B80]">
-                    <button onClick={handleAddDonationList} className="absolute left-8 top-1/2 transform -translate-y-1/2 py-4 px-7 rounded text-[#FFF] text-xl font-semibold" style={bgStyle}>Donate ${price}</button>
+                    <button onClick={handleAddDonationList} className="absolute left-8 top-1/2 transform -translate-y-1/2 py-2 md:py-4 md:px-7 px-4 rounded text-[#FFF] md:text-xl text-base font-semibold" style={bgStyle}>Donate ${price}</button>
                 </div>
             </div>
 
-            <h2 className="mt-12 text-[#0B0B0B] text-4xl font-bold mb-6">{title}</h2>
-            <p className="text-[#0B0B0BB2] text-base font-normal text-justify">{description}</p>
+            <h2 className="mt-4 md:mt-8 lg:mt-12 text-[#0B0B0B] text-xl md:text-4xl font-bold mb-2 md:mb-4 lg:mb-6">{title}</h2>
+            <p className="text-[#0B0B0BB2] text-base font-normal text-justify mb-6">{description}</p>
         </div>
     );
 };

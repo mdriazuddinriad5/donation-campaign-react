@@ -4,11 +4,11 @@ import Logo from "./Logo";
 
 const NavBar = () => {
     return (
-        <div className="max-w-7xl mx-auto">
+        <div className="w-5/6 mx-auto">
 
-            <nav className="flex justify-between items-center py-5 px-5">
+            <nav className="flex flex-col md:flex-row justify-between items-center py-5 px-5">
                 <Logo></Logo>
-                <ul className="flex justify-center items-center gap-12">
+                <ul className="flex justify-center items-center gap-12 mt-6 md:mt-0">
                     <li><NavLink
                         to={'/'}
                         className={({ isActive, isPending }) =>

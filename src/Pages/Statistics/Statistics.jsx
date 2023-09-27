@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Pie, PieChart, ResponsiveContainer, Cell, Label } from "recharts";
+import { Pie, PieChart, ResponsiveContainer, Cell } from "recharts";
 
 const Statistics = () => {
     const [totalItem, setTotalItem] = useState(0);
@@ -71,12 +71,12 @@ const Statistics = () => {
             </ResponsiveContainer>
 
 
-            <div className="flex justify-center gap-14 -mt-28">
-                <div className="flex items-center gap-4">
+            <div className="flex flex-col md:flex-row justify-center md:gap-14 -mt-28">
+                <div className="flex justify-center items-center gap-4">
                     <p>Your Donation</p>
                     <div className="bg-[#00C49F]" style={divStyle}></div>
                 </div>
-                <div className="flex items-center gap-4">
+                <div className="flex justify-center items-center gap-4">
                     <p>Total Donation</p>
                     <div className="bg-[#FF444A]" style={divStyle}></div>
                 </div>

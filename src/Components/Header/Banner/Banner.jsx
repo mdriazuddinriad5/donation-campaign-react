@@ -13,7 +13,7 @@ const Banner = ({handleSearch}) => {
 
     return (
         <div>
-            <div className="hero h-[50vh] relative">
+            <div className="hero lg:h-[50vh] relative">
                 <div
                     className="absolute inset-0"
                     style={{
@@ -25,7 +25,7 @@ const Banner = ({handleSearch}) => {
                 <div className="bg-white bg-opacity-95 absolute inset-0"></div>
                 <div className="hero-content text-center text-neutral-content relative z-10">
                     <div>
-                        <h1 className="mb-10 text-5xl font-bold">I Grow By Helping People In Need</h1>
+                        <h1 className="mb-4 md:mb-6 lg:mb-10 text-base md:text-2xl lg:text-5xl font-bold">I Grow By Helping People In Need</h1>
                         <input 
                         type="text" 
                         placeholder="Search here" 
@@ -33,7 +33,7 @@ const Banner = ({handleSearch}) => {
                         value={inputValue}
                         onChange={(e)=> setInputValue(e.target.value)}
                         />
-                        <button onClick={handleCategory} className="py-3 px-6 rounded-lg bg-[#FF444A] border-none text-[#FFFFFFF2]">Search</button>
+                        <button onClick={handleCategory} className="mt-4 py-3 px-6 rounded-lg bg-[#FF444A] border-none text-[#FFFFFFF2]">Search</button>
                     </div>
                 </div>
             </div>
